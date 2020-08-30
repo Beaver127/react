@@ -1,3 +1,5 @@
+
+//наши данные (тип БД)
 let state = {
     profilePage: {
         posts: [
