@@ -1,0 +1,25 @@
+.navbar {
+flex: 0 1 20%;
+}
+.navbar__body {
+background-color: #000;
+
+}
+.navbar_list {
+    padding: 10px;
+}
+.navbar_list__item {
+    margin: 0 0 10px 0;
+}
+.navbar_list__item:last-child {
+    margin: 0;
+}
+.navbar_list__item a {
+    color: #fff;
+}
+.navbar_list__item a.active {
+    color: greenyellow;
+}
+.navbar_list__item:hover a {
+    color: greenyellow;
+}

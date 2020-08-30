@@ -1,0 +1,13 @@
+.header {
+
+}
+.header_body {
+    background-color: #000;
+    margin: 0 auto;
+}
+.header__logo {
+
+}
+.header__logo img {
+   max-width: 100px;
+}
