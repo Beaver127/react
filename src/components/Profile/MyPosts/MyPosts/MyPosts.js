@@ -3,14 +3,15 @@ import Post from "../Post/Post";
 
 const MyPosts = (props) => {
     //принимаем массив данных и преобразовываем их в массив компонентов с этими данными с помощью map
-    let posts = props.state.posts.map(el => <Post message={el.message} likesCount={el.likesCount} />);
+    let posts = props.state.posts.map(el => <Post message={el.message} likesCount={el.likesCount} id={el.id} />);
 
     //создаем ссылку на объект для обращения к нему
     let newPostElement = React.createRef();
 
     let addPost = () => {
         let text = newPostElement.current.value;
-        alert(text);
+        props.addPost(text);
+        newPostElement.current.value = "";
     }
     return (
         <div>
